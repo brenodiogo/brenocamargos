@@ -1,0 +1,40 @@
+#backgroundContainer {
+    --background: none;
+    background: url('/assets/img/granpalladium5.jpg') no-repeat fixed center;
+    // background-image: url('/assets/img/imagemcasamento.JPG') no-repeat;
+    background-size: cover;
+    height: 90vh;
+    // background-color: #000;
+    // color: #fff;
+    // opacity: 0.5;
+  }
+
+  #container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #fff;
+    // height: 100vh;
+  }
+  
+  #container strong {
+    font-size: 7vh;
+    line-height: 6.5vh;
+  }
+  
+  #container p {
+    font-size: 3vh;
+    line-height: 4.5vh;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
