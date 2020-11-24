@@ -1,0 +1,14 @@
+.backbroundList {
+    background-color: var(--ion-color-secondary);
+}
+
+#backgroundContainer {
+    --background: none;
+    background: url('/assets/img/imagemcasamento3.jpg') no-repeat fixed center;
+    // background-image: url('/assets/img/imagemcasamento.JPG') no-repeat;
+    background-size: cover;
+    height: 90vh;
+    // background-color: #000;
+    // color: #fff;
+    // opacity: 0.5;
+  }

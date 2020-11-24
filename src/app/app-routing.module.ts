@@ -9,6 +9,18 @@ const routes: Routes = [
   {
       path: 'informacoes',
       loadChildren: () => import('./pages/informacoes/informacoes.module').then( m => m.InformacoesPageModule)
+  },
+  {
+    path: 'presenca',
+    loadChildren: () => import('./pages/presenca/presenca.module').then( m => m.PresencaPageModule)
+  },
+  {
+    path: 'presentes',
+    loadChildren: () => import('./pages/presentes/presentes.module').then( m => m.PresentesPageModule)
+  },
+  {
+    path: 'contato',
+    loadChildren: () => import('./pages/contato/contato.module').then( m => m.ContatoPageModule)
   }
 ];
 

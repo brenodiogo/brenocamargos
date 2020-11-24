@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <!-- Blank -->
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="tertiary">
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col size-lg="6" offset-lg="3" size="12">
+        <ion-list class="backbroundList">
+          <ion-list-header color="tertiary">Lista de Presença para a festa</ion-list-header>
+          <ion-item *ngFor="let convidado of listaDePresenca" color="tertiary"
+            class="animate__animated animate__backInLeft">
+            <ion-avatar slot="start">
+              <img [src]="convidado.img">
+            </ion-avatar>
+            <ion-label>{{ convidado.nome }} <img *ngIf="convidado.confirmado"
+                src="https://static-cdn.jtvnw.net/badges/v1/d12a2e27-16f6-41d0-ab77-b780518f00a3/3" style="width: 18px;"
+                title="Presença Confirmada!">
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<!-- <ion-content color="tertiary">
+  <ion-list class="backbroundList">
+    <ion-list-header color="tertiary">Item Avatars</ion-list-header>
+    <ion-item *ngFor="let convidado of listaDePresenca" color="tertiary">
+      <ion-avatar slot="start">
+        <img [src]="convidado.img">
+      </ion-avatar>
+      <ion-label>{{ convidado.nome }} <img
+          src="https://static-cdn.jtvnw.net/badges/v1/d12a2e27-16f6-41d0-ab77-b780518f00a3/3" style="width: 18px;">
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content> -->
